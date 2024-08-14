@@ -1,0 +1,76 @@
+
+#gallery .card {
+    transition: transform 0.3s ease;
+}
+
+#gallery .card:hover {
+    transform: scale(1.05);
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0a500;
+}
+
+.card-img-top 
+{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+}
+
+/* Gallery Card Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #f0a500;
+    border-color: #f0a500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d88e00;
+    border-color: #d88e00;
+}

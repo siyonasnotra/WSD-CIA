@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+    <recipe>
+        <title>Recipe 1</title>
+        <description>This is a delicious recipe for white sause pasta</description>
+        <technologies>
+            <technology>HTML</technology>
+            <technology>CSS</technology>
+            <technology>JavaScript</technology>
+        </technologies>
+    </recipe>
+    <recipe>
+        <title>Recipe 2</title>
+        <description>This is a delicious recipe garlic breads with some toppings.</description>
+        <technologies>
+            <technology>HTML</technology>
+            <technology>CSS</technology>
+            <technology>JavaScript</technology>
+        </technologies>
+    </recipe>
+    <recipe>
+        <title>Recipe 3</title>
+        <description>This is a delicious recipe for sushi and wasabi</description>
+        <technologies>
+            <technology>HTML</technology>
+            <technology>CSS</technology>
+            <technology>JavaScript</technology>
+        </technologies>
+    </recipe>
+    <recipe>
+        <title>Recipe 4</title>
+        <description>recipe for baked bread in round cut shape filled with mashed potato</description>
+        <technologies>
+            <technology>HTML</technology>
+            <technology>CSS</technology>
+            <technology>JavaScript</technology>
+        </technologies>
+    </recipe>
+</recipes>
