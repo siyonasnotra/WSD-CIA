@@ -1,0 +1,50 @@
+[
+    {
+      "number": "Recipe 1",
+      "name" : "White sause pasta",
+      "how to make":{
+        "step1": "Boil water",
+        "step2": "Add pasta",
+        "step3": "Add white sauce",
+        "step4": "Add cheese",
+        "step5": "Serve"
+      }
+      
+    },
+    {
+        "number": "Recipe 2",
+        "name" : "garlic bread",
+        "how to make":{
+          "step1": "Boil water",
+          "step2": "Add pasta",
+          "step3": "Add white sauce",
+          "step4": "Add cheese",
+          "step5": "Serve"
+        }
+        
+      },
+      {
+        "number": "Recipe 3",
+        "name" : "Sushi",
+        "how to make":{
+          "step1": "Boil water",
+          "step2": "Add pasta",
+          "step3": "Add white sauce",
+          "step4": "Add cheese",
+          "step5": "Serve"
+        }
+        
+      },
+    {
+        "number": "Recipe 4",
+        "name" : "Baked bread with potatoes",
+        "how to make":{
+          "step1": "Boil water",
+          "step2": "Add pasta",
+          "step3": "Add white sauce",
+          "step4": "Add cheese",
+          "step5": "Serve"
+        }
+        
+      }
+  ]
