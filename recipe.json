@@ -1,49 +1,48 @@
 [
     {
       "number": "Recipe 1",
-      "name" : "White sause pasta",
+      "name" : "Butter Chicken",
       "how to make":{
-        "step1": "Boil water",
-        "step2": "Add pasta",
-        "step3": "Add white sauce",
-        "step4": "Add cheese",
-        "step5": "Serve"
+        "step1": "Step 1: Marinate the chicken in yogurt and spices.",
+        "step2":"Mix butter and garlic",
+        "step3": "Add the marinated chicken to the butter mixture and cook until the chicken is cooked through.",
+        "step4": "Add the tomato sauce and cook for 5 minutes."
       }
       
     },
     {
         "number": "Recipe 2",
-        "name" : "garlic bread",
+        "name" : "Spaghetti",
         "how to make":{
-          "step1": "Boil water",
-          "step2": "Add pasta",
-          "step3": "Add white sauce",
-          "step4": "Add cheese",
-          "step5": "Serve"
+            "step1": "Step 1: Boil the spaghetti in water.",
+            "step2": "Step 2: Mix the tomato sauce with the cooked spaghetti.",
+            "step3": "Step 3: Add the grated cheese on top of the spaghetti.",
+            "step4":"Add the tomato sauce and cook for 5 minutes.",
+            "step5": "Step 5: Serve the spaghetti hot."
+            
         }
         
       },
       {
         "number": "Recipe 3",
-        "name" : "Sushi",
+        "name" : "Vegan Buddha Bowl",
         "how to make":{
-          "step1": "Boil water",
-          "step2": "Add pasta",
-          "step3": "Add white sauce",
-          "step4": "Add cheese",
-          "step5": "Serve"
+            "step1": "Step 1: Cook the quinoa.",
+            "step2": "Step 2: Roast the vegetables in the oven.",
+            "step3": "Step 3: Mix the cooked quinoa with the roasted vegetables.",
+            "step4": "Step 4: Add the tahini sauce on top of the quinoa and vegetables."
         }
         
       },
     {
         "number": "Recipe 4",
-        "name" : "Baked bread with potatoes",
+        "name" : "Chocolate Lava Cake",
         "how to make":{
-          "step1": "Boil water",
-          "step2": "Add pasta",
-          "step3": "Add white sauce",
-          "step4": "Add cheese",
-          "step5": "Serve"
+            "step1": "Step 1: Preheat the oven to 425°F.",
+            "step2": "Step 2: Mix the melted chocolate with the eggs and sugar.",
+            "step3": "Step 3: Pour the mixture into the ramekins.",
+            "step4": "Step 4: Bake the cakes for 12-15 minutes.",
+            "step5": "Step 5: Serve the cakes warm with vanilla ice cream."
         }
         
       }

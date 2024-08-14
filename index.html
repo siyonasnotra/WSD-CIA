@@ -8,13 +8,13 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    
+
     <!-- Leaflet Routing Machine CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
-    
+
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
@@ -40,8 +40,8 @@
                             Categorization
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#veg-recipes">Veg</a></li>
                             <li><a class="dropdown-item" href="#nonveg-recipes">Non-Veg</a></li>
+                            <li><a class="dropdown-item" href="#veg-recipes">Veg</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -54,115 +54,173 @@
             </div>
         </div>
     </nav>
-    
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to My Recipe Sharing Portfolio</h1>
-            <p>Discover and share delicious recipes.</p>
-            <a href="#gallery" class="btn btn-primary">Explore Recipes</a>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Recipe Sharing</h1>
+            <p>Discover and share your favorite recipes with a community of food enthusiasts.</p>
+            <a href="#gallery" class="btn btn-primary btn-lg">Explore Recipes</a>
         </div>
     </section>
 
     <!-- Image Gallery -->
     <section id="gallery" class="container my-5">
         <h2 class="text-center mb-4">Recipe Gallery</h2>
-        <div class="d-flex flex-wrap justify-content-center">
-            <div class="card m-3" style="width: 18rem;">
-                <img src="images/recipe1.jpg" class="card-img-top" alt="Recipe 1">
-                <div class="card-body">
-                    <h5 class="card-title">Recipe 1</h5>
-                    <p class="card-text">White sauce pasta</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe1Modal">View Details</a>
+        
+        <!-- Non-Veg Recipes -->
+        <div id="nonveg-recipes" class="my-4">
+            <h3 class="text-center mb-4">Non-Veg Recipes</h3>
+            <div class="d-flex flex-wrap justify-content-center">
+                <!-- Butter Chicken -->
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="images/recipe1.jpg" class="card-img-top" alt="Butter Chicken">
+                    <div class="card-body">
+                        <h5 class="card-title">Butter Chicken</h5>
+                        <p class="card-text">A rich and creamy Indian curry made with tender chicken pieces cooked in a spiced tomato gravy.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#butterChickenModal">View Details</a>
+                    </div>
                 </div>
             </div>
-            <div class="card m-3" style="width: 18rem;">
-                <img src="images/recipe2.jpg" class="card-img-top" alt="Recipe 2">
-                <div class="card-body">
-                    <h5 class="card-title">Recipe 2</h5>
-                    <p class="card-text">Garlic Breads</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe1Modal">View Details</a>
+        </div>
+
+        <!-- Veg Recipes -->
+        <div id="veg-recipes" class="my-4">
+            <h3 class="text-center mb-4">Veg Recipes</h3>
+            <div class="d-flex flex-wrap justify-content-center">
+                <!-- Spaghetti Carbonara -->
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="images/recipe2.jpg" class="card-img-top" alt="Spaghetti Carbonara">
+                    <div class="card-body">
+                        <h5 class="card-title">Spaghetti</h5>
+                        <p class="card-text">A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#spaghettiCarbonaraModal">View Details</a>
+                    </div>
+                </div>
+                <!-- Vegan Buddha Bowl -->
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="images/recipe3.jpg" class="card-img-top" alt="Vegan Buddha Bowl">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Buddha Bowl</h5>
+                        <p class="card-text">A nourishing and colorful bowl of quinoa, roasted veggies, and a creamy tahini dressing.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#veganBuddhaBowlModal">View Details</a>
+                    </div>
+                </div>
+                <!-- Chocolate Lava Cake -->
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="images/recipe4.jpg" class="card-img-top" alt="Chocolate Lava Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                        <p class="card-text">A decadent dessert with a gooey chocolate center, served warm with a scoop of vanilla ice cream.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chocolateLavaCakeModal">View Details</a>
+                    </div>
                 </div>
             </div>
-            <div class="card m-3" style="width: 18rem;">
-                <img src="images/recipe3.jpg" class="card-img-top" alt="Recipe 3">
-                <div class="card-body">
-                    <h5 class="card-title">Recipe 3</h5>
-                    <p class="card-text">Sushi with wasabi</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe1Modal">View Details</a>
-                </div>
-            </div>
-            <div class="card m-3" style="width: 18rem;">
-                <img src="images/recipe4.jpg" class="card-img-top" alt="Recipe 4">
-                <div class="card-body">
-                    <h5 class="card-title">Recipe 4</h5>
-                    <p class="card-text">Baked bread with smashed potato</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe1Modal">View Details</a>
-                </div>
-            </div>
-            
         </div>
     </section>
-    
 
-    <!-- Modal for Recipe Details -->
-    <div class="modal fade" id="recipe1Modal" tabindex="-1" role="dialog" aria-labelledby="recipe1ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <!-- Modals for Recipe Details -->
+    <!-- Butter Chicken Modal -->
+    <div class="modal fade" id="butterChickenModal" tabindex="-1" aria-labelledby="butterChickenModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="recipe1ModalLabel">Recipe 1 Details</h5>
+                    <h5 class="modal-title" id="butterChickenModalLabel">Butter Chicken</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/recipe1.jpg" class="img-fluid" alt="Recipe 1">
-                    <p>Detailed description of Recipe 1.</p>
+                    <img src="images/recipe1.jpg" class="img-fluid" alt="Butter Chicken">
+                    <p>Butter Chicken, also known as Murgh Makhani, is a popular Indian dish. It features succulent pieces of chicken simmered in a rich, buttery, and creamy tomato-based sauce. The dish is flavored with a blend of aromatic spices, including garam masala, turmeric, and cumin. Serve it with naan or basmati rice for a complete meal.</p>
                 </div>
             </div>
         </div>
     </div>
-    
 
-    <!-- GitHub Data Section -->
-    <section id="projects" class="container my-5">
-        <h2 class="text-center mb-4">Recent GitHub Commits</h2>
-        <div id="github-data" class="text-center">
-            <!-- GitHub data will be displayed here -->
+    <!-- Spaghetti Carbonara Modal -->
+    <div class="modal fade" id="spaghettiCarbonaraModal" tabindex="-1" aria-labelledby="spaghettiCarbonaraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="spaghettiCarbonaraModalLabel">Spaghetti</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/recipe2.jpg" class="img-fluid" alt="Spaghetti">
+                    <p>Spaghetti is a rich and creamy pasta dish originating from Rome. The dish is traditionally made with eggs, Pecorino Romano cheese, guanciale (or pancetta), and freshly ground black pepper. It's a quick and simple recipe, yet delivers a burst of flavor in every bite.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vegan Buddha Bowl Modal -->
+    <div class="modal fade" id="veganBuddhaBowlModal" tabindex="-1" aria-labelledby="veganBuddhaBowlModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="veganBuddhaBowlModalLabel">Vegan Buddha Bowl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/recipe3.jpg" class="img-fluid" alt="Vegan Buddha Bowl">
+                    <p>A nourishing and colorful bowl of quinoa, roasted veggies, and a creamy tahini dressing. This vegan buddha bowl is packed with nutrients and flavor, making it a perfect meal for any time of the day.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chocolate Lava Cake Modal -->
+    <div class="modal fade" id="chocolateLavaCakeModal" tabindex="-1" aria-labelledby="chocolateLavaCakeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chocolateLavaCakeModalLabel">Chocolate Lava Cake</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/recipe4.jpg" class="img-fluid" alt="Chocolate Lava Cake">
+                    <p>Chocolate Lava Cake is a decadent dessert with a gooey chocolate center that flows out when you cut into it. Serve it warm with a scoop of vanilla ice cream for an indulgent treat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </section>
+    
+     <!-- Footer -->
+     <footer class="text-center py-3">
+        <p>&copy; 2024 Recipe Sharing Portfolio. All Rights Reserved.</p>
+    </footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container my-5">
-        <h2 class="text-center mb-4">Contact</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-    </section>
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Bundle JS (includes Popper.js) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot; rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&quot; integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    
+
     <!-- Leaflet Routing Machine JS -->
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
-
 </body>
 
 </html>

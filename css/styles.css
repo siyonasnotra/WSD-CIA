@@ -1,13 +1,23 @@
 
+/* Flex layout for the gallery */
 #gallery .card {
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery .card img {
+    width: 100%;
+    height: 350px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
 }
 
 #gallery .card:hover {
     transform: scale(1.05);
 }
 
-
+/* Navbar Styling */
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
@@ -22,11 +32,83 @@
     color: #f0a500;
 }
 
-.card-img-top 
-{
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover; 
+/* Hero Section Styling */
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    margin-top: 20px;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Gallery Card Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #f0a500;
+    border-color: #f0a500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d88e00;
+    border-color: #d88e00;
+}
+
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0a500;
 }
 
 /* Hero Section Styling */
